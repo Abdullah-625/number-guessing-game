@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Number Guessing Game</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="game-container">
+
+        <header>
+            <h1>Guess the Number</h1>
+            <p>Can you find the secret number?</p>
+        </header>
+
+        <section class="game-card">
+
+            <div class="game-info">
+                <span>NUMBER RANGE</span>
+                <strong>1 - 100</strong>
+            </div>
+
+            <div class="game-info">
+                <span>ATTEMPTS LEFT</span>
+                <strong id="attempts">7</strong>
+            </div>
+
+            <div class="secret-number">
+                ?
+            </div>
+
+            <p id="message">
+                Enter a number between 1 and 100.
+            </p>
+
+            <div class="input-area">
+
+                <input
+                    type="number"
+                    id="guess-input"
+                    placeholder="Your guess"
+                    min="1"
+                    max="100"
+                >
+
+                <button id="guess-btn">
+                    Guess
+                </button>
+
+            </div>
+
+            <button id="restart-btn" class="restart-btn">
+                Play Again
+            </button>
+
+            <div class="history">
+                <h3>Previous Guesses</h3>
+                <div id="guess-history">
+                    No guesses yet.
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            Made with HTML, CSS & JavaScript
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

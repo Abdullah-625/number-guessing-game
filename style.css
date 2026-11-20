@@ -1,0 +1,233 @@
+
+/* ================================
+   1. GENERAL SETTINGS
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #101827;
+    color: white;
+
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+/* ================================
+   2. GAME CONTAINER
+================================ */
+
+.game-container {
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 25px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+header p {
+    color: #9ca9bc;
+    font-size: 14px;
+}
+
+/* ================================
+   3. GAME CARD
+================================ */
+
+.game-card {
+    background: #1c293b;
+    padding: 25px;
+    border-radius: 18px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* ================================
+   4. GAME INFORMATION
+================================ */
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 15px;
+
+    background: #26364b;
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.game-info span {
+    font-size: 12px;
+    color: #9ca9bc;
+}
+
+.game-info strong {
+    color: #62dfa7;
+}
+
+/* ================================
+   5. SECRET NUMBER
+================================ */
+
+.secret-number {
+    font-size: 65px;
+    font-weight: bold;
+
+    color: #62dfa7;
+
+    margin: 25px 0;
+}
+
+/* ================================
+   6. MESSAGE
+================================ */
+
+#message {
+    color: #c3cede;
+    font-size: 14px;
+    margin-bottom: 18px;
+    min-height: 20px;
+}
+
+/* ================================
+   7. INPUT AREA
+================================ */
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    width: 100%;
+    min-width: 0;
+
+    padding: 14px;
+    font-size: 16px;
+
+    border: 2px solid #34445c;
+    border-radius: 9px;
+
+    background: #101827;
+    color: white;
+
+    outline: none;
+}
+
+input:focus {
+    border-color: #62dfa7;
+}
+
+button {
+    border: none;
+    border-radius: 9px;
+
+    padding: 13px 20px;
+
+    background: #62dfa7;
+    color: #10251c;
+
+    font-size: 15px;
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+/* ================================
+   8. RESTART BUTTON
+================================ */
+
+.restart-btn {
+    width: 100%;
+    margin-top: 12px;
+
+    background: #34445c;
+    color: white;
+}
+
+/* ================================
+   9. GUESS HISTORY
+================================ */
+
+.history {
+    margin-top: 25px;
+    text-align: left;
+}
+
+.history h3 {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+#guess-history {
+    color: #9ca9bc;
+    font-size: 13px;
+    line-height: 1.8;
+    overflow-wrap: anywhere;
+}
+
+/* ================================
+   10. FOOTER
+================================ */
+
+footer {
+    color: #68788e;
+    font-size: 12px;
+    margin-top: 20px;
+}
+
+/* ================================
+   11. MOBILE RESPONSIVE
+================================ */
+
+@media (max-width: 480px) {
+
+    body {
+        padding: 15px;
+        align-items: flex-start;
+    }
+
+    .game-container {
+        margin-top: 30px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+
+    .game-card {
+        padding: 20px;
+    }
+
+    .secret-number {
+        font-size: 55px;
+    }
+
+    .input-area button {
+        padding: 13px 16px;
+    }
+
+}
